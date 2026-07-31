@@ -7,6 +7,7 @@ public:
             int add = 0;
             for(int k=1;k*k<=nums[i];k++){
                 if(nums[i]%k==0){
+                    if(count>4)break;
                     if(nums[i]/k==k){
                         count++;
                         add+=k;
