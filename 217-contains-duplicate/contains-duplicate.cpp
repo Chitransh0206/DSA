@@ -26,7 +26,7 @@ public:
         unordered_set<int>xyz;
         for(int i=0;i<nums.size();i++){
             xyz.insert(nums[i]);
-            if(xyz.size() == nums.size()){
+            if(xyz.size() >= nums.size()){
                 return false;
             }
         }
